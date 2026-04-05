@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package notification;
+
+option go_package = "github.com/naren/gRPC-Order-System/protos/notification";
+
+service NotificationService {
+  rpc SubscribeNotifications(stream NotificationRequest) returns (stream NotificationAck);
+}
+
+message NotificationRequest {
+  string order_id = 1;
+  string status = 2;
+}
+
+message NotificationAck {
+  string order_id = 1;
+  string ack_status = 2;
+}

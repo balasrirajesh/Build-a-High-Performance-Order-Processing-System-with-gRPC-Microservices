@@ -1,0 +1,20 @@
+{
+  "name": "build-a-high-performance-order-processing-system-with-grpc-microservices",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.14.3",
+    "@grpc/proto-loader": "^0.8.0",
+    "axios": "^1.7.9",
+    "express": "^5.2.1",
+    "uuid": "^13.0.0"
+  }
+}
